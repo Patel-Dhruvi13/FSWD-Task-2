@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+      <div class="w-64 bg-blue-800 text-white p-6">
+        <div class="text-2xl font-semibold mb-8">Dashboard</div>
+        <ul>
+          <li class="mb-4">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-700 rounded-lg">Dashboard</a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-700 rounded-lg">Users</a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-700 rounded-lg">Settings</a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-700 rounded-lg">Reports</a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="block py-2 px-4 hover:bg-blue-700 rounded-lg">Logout</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Main Content Area -->
+      <div class="flex-1 bg-gray-50">
+        <!-- Header -->
+        <header class="bg-white shadow-md p-4 flex items-center justify-between">
+          <div class="text-xl font-semibold">Welcome back, User</div>
+          <div class="flex items-center space-x-4">
+            <button class="bg-blue-600 text-white py-2 px-4 rounded-lg">Profile</button>
+            <button class="bg-red-600 text-white py-2 px-4 rounded-lg">Logout</button>
+          </div>
+        </header>
+  
+        <!-- Main Content -->
+        <main class="p-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-lg font-semibold mb-4">Total Sales</h3>
+              <div class="text-3xl font-bold text-blue-600">$5,000</div>
+              <div class="mt-4 text-sm text-gray-500">This month's total sales.</div>
+            </div>
+  
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-lg font-semibold mb-4">Active Users</h3>
+              <div class="text-3xl font-bold text-green-600">1,230</div>
+              <div class="mt-4 text-sm text-gray-500">Number of active users today.</div>
+            </div>
+  
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-lg font-semibold mb-4">New Messages</h3>
+              <div class="text-3xl font-bold text-red-600">45</div>
+              <div class="mt-4 text-sm text-gray-500">Unread messages in your inbox.</div>
+            </div>
+          </div>
+  
+          <!-- Charts Section -->
+          <div class="mt-12">
+            <h2 class="text-2xl font-semibold mb-6">Analytics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Chart 1 (Placeholder) -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-80">
+                <div class="text-lg font-semibold mb-4">Revenue Over Time</div>
+                <!-- Placeholder for Chart -->
+                <div class="h-full bg-gray-300 rounded-lg flex justify-center items-center">
+                  <span class="text-gray-600">Chart 1</span>
+                </div>
+              </div>
+  
+              <!-- Chart 2 (Placeholder) -->
+              <div class="bg-white p-6 rounded-lg shadow-lg h-80">
+                <div class="text-lg font-semibold mb-4">User Growth</div>
+                <!-- Placeholder for Chart -->
+                <div class="h-full bg-gray-300 rounded-lg flex justify-center items-center">
+                  <span class="text-gray-600">Chart 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  
+  </body>
+    
